@@ -40,9 +40,10 @@ while dicio:
         else:
             print("Palavra não encontrada. ")
 
+# finaliza o cronômetro 
 fim = time.perf_counter()
 
-# contabiliza quantos segundos a pesquisa levou para ser executada, impreme e volta ao loop principal
+# contabiliza quantos segundos a pesquisa levou para ser executada, imprime e volta ao loop principal
 tempo_total = fim - inicio
 
 print("Essa pesquisa levou", tempo_total, "segundos.")
