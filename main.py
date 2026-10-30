@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 # armazena o site numa variável
 site = "https://www.dicio.com.br/"
 
+# cores para uso em textos 
 CIANO = "\033[36m"
 RESET = "\033[0m"
 ROXO = "\033[35m"
