@@ -28,7 +28,6 @@ while dicio:
     # faz um requests ao site armazenado 
     site1 = requests.get(site) 
     resultado = requests.get(site + palavra + "/")
-    
 
     soup = BeautifulSoup(resultado.text, "html.parser")
     significado = soup.find("h2", class_="tit-significado")
@@ -42,7 +41,6 @@ while dicio:
             print("Palavra não encontrada. ")
 
 fim = time.perf_counter()
-
 
 # contabiliza quantos segundos a pesquisa levou para ser executada, impreme e volta ao loop principal
 tempo_total = fim - inicio
