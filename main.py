@@ -32,7 +32,7 @@ while dicio:
     soup = BeautifulSoup(resultado.text, "html.parser")
     significado = soup.find("h2", class_="tit-significado")
     
-    # impreme o resultado na tela
+    # imprime o resultado na tela
     for significados in soup.find_all("p", class_="significado"):
         if significados:
             print(significado.text, "\n")
